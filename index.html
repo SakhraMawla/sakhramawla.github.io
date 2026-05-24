@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script>
@@ -29,166 +29,163 @@
     </script>
 
     <style>
-        .premium-shadow {
-            box-shadow: 0 25px 50px -12px rgba(45, 106, 79, 0.08);
-        }
-        .can-glow-green {
-            filter: drop-shadow(0 15px 25px rgba(82, 183, 136, 0.35));
-        }
-        .can-glow-pink {
-            filter: drop-shadow(0 15px 25px rgba(255, 117, 143, 0.35));
-        }
-        .can-glow-orange {
-            filter: drop-shadow(0 15px 25px rgba(255, 159, 28, 0.35));
-        }
+        .premium-shadow { box-shadow: 0 25px 50px -12px rgba(45, 106, 79, 0.08); }
+        .can-glow-green { filter: drop-shadow(0 15px 25px rgba(82, 183, 136, 0.35)); }
+        .can-glow-pink { filter: drop-shadow(0 15px 25px rgba(255, 117, 143, 0.35)); }
+        .can-glow-orange { filter: drop-shadow(0 15px 25px rgba(255, 159, 28, 0.35)); }
     </style>
 </head>
 <body class="bg-white text-slate-800 font-sans overflow-x-hidden relative">
 
     <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
-        <div class="absolute text-3xl md:text-4xl opacity-20 floating-fruit" style="top: 8%; left: 4%;">🍏</div>
-        <div class="absolute text-4xl md:text-5xl opacity-15 floating-fruit" style="top: 35%; right: 4%;">🍊</div>
-        <div class="absolute text-3xl md:text-4xl opacity-20 floating-fruit" style="top: 60%; left: 3%;">🍓</div>
-        <div class="absolute text-2xl md:text-3xl opacity-10 floating-fruit" style="top: 85%; right: 6%;">🍋</div>
+        <div class="absolute text-4xl opacity-20 floating-fruit" style="top: 12%; left: 8%;">🍏</div>
+        <div class="absolute text-5xl opacity-15 floating-fruit" style="top: 38%; right: 6%;">🍊</div>
+        <div class="absolute text-4xl opacity-20 floating-fruit" style="top: 65%; left: 4%;">🍓</div>
+        <div class="absolute text-3xl opacity-10 floating-fruit" style="top: 80%; right: 12%;">🍋</div>
     </div>
 
-    <header class="w-full fixed top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-100 py-3 md:py-4">
-        <nav class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center px-4 md:px-6 gap-2 sm:gap-0">
-            <div class="font-extrabold text-xl md:text-2xl tracking-tight text-ecoDarkGreen flex items-center gap-1 select-none order-1">
-                <span class="bg-ecoDarkGreen text-white px-2 py-0.5 rounded-lg text-sm md:text-lg">ECO</span>FRUITS
+    <header class="w-full fixed top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100 py-4">
+        <nav class="max-w-6xl mx-auto flex justify-between items-center px-6">
+            <div class="flex gap-6 text-sm font-bold text-slate-600">
+                <a href="#about" class="hover:text-ecoDarkGreen transition-colors">Tentang Kami</a>
+                <a href="#catalogue" class="hover:text-ecoDarkGreen transition-colors">Katalog Produk</a>
+                <a href="#quiz-section" class="hover:text-ecoDarkGreen transition-colors hidden sm:inline">Kuis Nutrisi</a>
             </div>
-            
-            <div class="flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs md:text-sm font-bold text-slate-600 order-2">
-                <a href="#about" class="hover:text-ecoDarkGreen transition-colors py-1">Tentang</a>
-                <a href="#catalogue" class="hover:text-ecoDarkGreen transition-colors py-1">Katalog</a>
-                <a href="#hub-lokasi" class="hover:text-ecoDarkGreen transition-colors py-1">Lokasi Hub</a>
-                <a href="#hub-lokasi" class="hover:text-ecoDarkGreen transition-colors py-1">Kontak</a>
+
+            <div class="font-extrabold text-2xl tracking-tight text-ecoDarkGreen flex items-center gap-1 select-none">
+                <span class="bg-ecoDarkGreen text-white px-2 py-0.5 rounded-lg text-lg">ECO</span>FRUITS
+            </div>
+
+            <div class="flex gap-6 text-sm font-bold text-slate-600">
+                <a href="#hub-lokasi" class="hover:text-ecoDarkGreen transition-colors">Lokasi Hub</a>
+                <a href="#hub-lokasi" class="hover:text-ecoDarkGreen transition-colors">Kontak</a>
             </div>
         </nav>
     </header>
 
-    <section id="home" class="mx-3 md:mx-8 mt-24 md:mt-28 relative z-10">
-        <div class="w-full bg-gradient-to-br from-ecoGreen to-ecoDarkGreen rounded-[30px] md:rounded-[40px] px-5 sm:px-10 md:px-20 py-12 md:py-24 relative overflow-hidden text-white min-h-[500px] flex items-center">
-            
+    <section id="home" class="mx-4 md:mx-8 mt-24 relative z-10">
+        <div id="heroBg" class="w-full bg-gradient-to-br from-ecoGreen to-ecoDarkGreen rounded-[40px] px-8 md:px-20 py-16 md:py-24 relative overflow-hidden text-white min-h-[550px] flex items-center transition-all duration-700">
             <div class="absolute -top-10 -left-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
-
-            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full relative z-10">
-                <div id="heroText" class="space-y-4 md:space-y-6 opacity-0 -translate-x-10 text-center md:text-left flex flex-col items-center md:items-start">
-                    <div class="text-white/60 font-mono text-[10px] md:text-xs tracking-widest flex items-center gap-2">
-                        <span>05</span>
+            
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full relative z-10">
+                <div id="heroText" class="space-y-6 opacity-0 -translate-x-10">
+                    <div class="text-white/60 font-mono text-xs tracking-widest flex items-center gap-2">
+                        <span id="heroNumber">05</span>
                         <div class="w-12 h-[1px] bg-white/40"></div> <i class="fa-solid fa-arrow-right-long"></i>
                     </div>
-                    <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight leading-none">
-                        Zest. Citrus
-                    </h1>
-                    <p class="text-xs sm:text-sm md:text-base text-white/80 max-w-sm font-medium leading-relaxed">
+                    
+                    <h1 id="heroTitle" class="text-5xl md:text-7xl font-extrabold tracking-tight leading-none">Zest. Citrus</h1>
+                    <p id="heroDesc" class="text-sm md:text-base text-white/80 max-w-sm font-medium leading-relaxed">
                         Jus organik murni kualitas premium untuk menghidrasi seluler dan mengembalikan stamina aktif harian Anda tanpa bahan pengawet.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-3 pt-2 w-full sm:w-auto">
-                        <a href="#catalogue" class="border border-white/40 hover:bg-white/10 text-white font-bold text-xs px-6 py-3.5 rounded-full transition-all text-center">
+                    
+                    <div class="space-y-3 pt-2">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-white/70 block">Pilih Varian Formulasi:</span>
+                        <div class="flex gap-3" id="variant-selector-group">
+                            <button data-variant="orange" class="w-8 h-8 rounded-full bg-amber-400 border-2 border-white shadow-md transform hover:scale-110 active:scale-95 transition-all focus:outline-none"></button>
+                            <button data-variant="green" class="w-8 h-8 rounded-full bg-emerald-500 border-2 border-transparent hover:border-white shadow-md transform hover:scale-110 active:scale-95 transition-all focus:outline-none"></button>
+                            <button data-variant="pink" class="w-8 h-8 rounded-full bg-rose-400 border-2 border-transparent hover:border-white shadow-md transform hover:scale-110 active:scale-95 transition-all focus:outline-none"></button>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 pt-4">
+                        <a href="#catalogue" class="border border-white/40 hover:bg-white/10 text-white font-bold text-xs px-6 py-3 rounded-full transition-all">
                             Pelajari Selengkapnya
                         </a>
-                        <a href="#hub-lokasi" class="bg-ecoOrange hover:bg-orange-600 text-white font-bold text-xs px-6 py-3.5 rounded-full transition-all shadow-lg shadow-ecoOrange/20 text-center">
+                        <a href="#hub-lokasi" class="bg-ecoOrange hover:bg-orange-600 text-white font-bold text-xs px-6 py-3 rounded-full transition-all shadow-lg shadow-ecoOrange/20">
                             Cari Lokasi Terdekat
                         </a>
                     </div>
                 </div>
 
-                <div id="heroVisual" class="flex justify-center relative opacity-0 scale-95 mt-4 md:mt-0">
-                    <div class="absolute w-48 h-48 bg-amber-400/20 rounded-full filter blur-3xl -top-5 animate-pulse"></div>
+                <div id="heroVisual" class="flex justify-center relative opacity-0 scale-95">
+                    <div class="absolute w-64 h-64 bg-amber-400/20 rounded-full filter blur-3xl -top-10 animate-pulse"></div>
 
-                    <div id="mainCan" class="w-36 h-64 sm:w-44 sm:h-80 bg-gradient-to-b from-amber-300 via-ecoOrange to-rose-400 rounded-[28px] sm:rounded-[35px] border-4 border-white/20 shadow-2xl relative p-4 flex flex-col justify-between overflow-hidden can-glow-orange transform rotate-6">
+                    <div id="mainCan" class="w-44 h-80 bg-gradient-to-b from-amber-300 via-ecoOrange to-rose-400 rounded-[35px] border-4 border-white/20 shadow-2xl relative p-4 flex flex-col justify-between overflow-hidden can-glow-orange transform rotate-6 transition-all duration-500">
                         <div class="absolute inset-0 bg-white/10 skew-x-12 origin-top-left"></div>
-                        <div class="text-center font-bold text-[8px] sm:text-[10px] text-white/60 uppercase tracking-widest">Premium Core</div>
+                        <div id="canTagTop" class="text-center font-bold text-[10px] text-white/60 uppercase tracking-widest">Premium Core</div>
                         <div class="text-center">
-                            <img src="img/jeyuk.png" alt="Jeruk" class="w-10 h-10 sm:w-12 sm:h-12 mx-auto object-contain">
-                            <h3 class="font-black text-base sm:text-xl tracking-tight mt-1 sm:mt-2 text-white">Zest Citrus</h3>
+                            <img id="canImg" src="img/jeyuk.png" alt="Jeruk" class="w-12 h-12 mx-auto object-contain transition-all duration-300">
+                            <h3 id="canTitle" class="font-black text-xl tracking-tight mt-2 text-white">Zest Citrus</h3>
                         </div>
-                        <div class="w-full bg-white/20 backdrop-blur-sm rounded-xl py-1.5 sm:py-2 text-[8px] sm:text-[10px] text-center font-bold text-white">
-                            100% ORGANIK
-                        </div>
+                        <div id="canTagBottom" class="w-full bg-white/20 backdrop-blur-sm rounded-xl py-2 text-[10px] text-center font-bold text-white tracking-wide uppercase">100% Organik</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-16 md:py-24 px-4 md:px-6 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center relative z-10">
-        <div class="space-y-4 md:space-y-6 about-text opacity-0 text-center md:text-left">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight flex items-center justify-center md:justify-start gap-3">
-                Tentang Kami <span class="w-3 h-3 rounded-full bg-ecoGreen hidden sm:inline-block"></span>
+    <section id="about" class="py-24 px-6 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center relative z-10">
+        <div class="space-y-6 about-text opacity-0">
+            <h2 class="text-4xl font-extrabold text-slate-900 tracking-tight flex items-center gap-3">
+                Tentang Kami <span class="w-3 h-3 rounded-full bg-ecoGreen"></span>
             </h2>
-            <div class="text-slate-600 space-y-4 font-medium text-xs md:text-base leading-relaxed">
+            <div class="text-slate-600 space-y-4 font-medium text-sm md:text-base leading-relaxed">
                 <p><strong class="text-ecoDarkGreen">Eco Fruits</strong> hadir menyajikan ekstrak formula nutrisi murni bagi Anda yang mengutamakan gaya hidup sehat seimbang tanpa mengorbankan kesegaran rasa alami.</p>
-                <p class="text-slate-400 text-xs md:text-sm">Diproses menggunakan teknologi cold-pressed lambat agar struktur enzim aktif dan kebaikan vitamin di dalam buah tetap terjaga utuh sempurna.</p>
+                <p class="text-slate-400 text-sm">Diproses menggunakan teknologi cold-pressed lambat agar struktur enzim aktif dan kebaikan vitamin di dalam buah tetap terjaga utuh sempurna.</p>
             </div>
         </div>
 
-        <div class="grid grid-cols-2 gap-3 sm:gap-4 about-grid opacity-0">
-            <div class="bg-amber-400 text-white p-4 sm:p-6 rounded-2xl sm:rounded-3xl flex flex-col justify-between min-h-[120px] sm:min-h-[140px] shadow-sm hover:scale-105 transition-transform duration-300">
-                <i class="fa-solid fa-apple-whole text-xl sm:text-2xl opacity-60"></i>
-                <div class="mt-4">
-                    <h4 class="font-extrabold text-xs sm:text-base leading-tight">Vitamin & Mineral</h4>
-                    <p class="text-[9px] sm:text-[11px] opacity-80">Nutrisi makro lengkap</p>
+        <div class="grid grid-cols-2 gap-4 about-grid opacity-0">
+            <div class="bg-amber-400 text-white p-6 rounded-3xl flex flex-col justify-between min-h-[140px] shadow-sm hover:scale-105 transition-transform duration-300">
+                <i class="fa-solid fa-apple-whole text-2xl opacity-60"></i>
+                <div>
+                    <h4 class="font-extrabold text-base leading-tight">Vitamin & Mineral</h4>
+                    <p class="text-[11px] opacity-80">Nutrisi makro lengkap terjaga</p>
                 </div>
             </div>
-            <div class="bg-lime-300 text-slate-800 p-4 sm:p-6 rounded-2xl sm:rounded-3xl flex flex-col justify-between min-h-[120px] sm:min-h-[140px] shadow-sm hover:scale-105 transition-transform duration-300">
-                <i class="fa-solid fa-heart-pulse text-xl sm:text-2xl text-ecoDarkGreen opacity-60"></i>
-                <div class="mt-4">
-                    <h4 class="font-extrabold text-xs sm:text-base leading-tight">Proteksi Tubuh</h4>
-                    <p class="text-[9px] sm:text-[11px] opacity-80">Metabolisme aktif</p>
+            <div class="bg-lime-300 text-slate-800 p-6 rounded-3xl flex flex-col justify-between min-h-[140px] shadow-sm hover:scale-105 transition-transform duration-300">
+                <i class="fa-solid fa-heart-pulse text-2xl text-ecoDarkGreen opacity-60"></i>
+                <div>
+                    <h4 class="font-extrabold text-base leading-tight">Proteksi Tubuh</h4>
+                    <p class="text-[11px] opacity-80">Mendukung metabolisme aktif</p>
                 </div>
             </div>
-            <div class="bg-rose-300 text-white p-4 sm:p-6 rounded-2xl sm:rounded-3xl flex flex-col justify-between min-h-[120px] sm:min-h-[140px] shadow-sm hover:scale-105 transition-transform duration-300">
-                <i class="fa-solid fa-bolt text-xl sm:text-2xl opacity-60"></i>
-                <div class="mt-4">
-                    <h4 class="font-extrabold text-xs sm:text-base leading-tight">Energi Alami</h4>
-                    <p class="text-[9px] sm:text-[11px] opacity-80">Booster stamina instan</p>
+            <div class="bg-rose-300 text-white p-6 rounded-3xl flex flex-col justify-between min-h-[140px] shadow-sm hover:scale-105 transition-transform duration-300">
+                <i class="fa-solid fa-bolt text-2xl opacity-60"></i>
+                <div>
+                    <h4 class="font-extrabold text-base leading-tight">Energi Alami</h4>
+                    <p class="text-[11px] opacity-80">Booster stamina harian instan</p>
                 </div>
             </div>
-            <div class="bg-emerald-600 text-white p-4 sm:p-6 rounded-2xl sm:rounded-3xl flex flex-col justify-between min-h-[120px] sm:min-h-[140px] shadow-sm hover:scale-105 transition-transform duration-300">
-                <i class="fa-solid fa-leaf text-xl sm:text-2xl opacity-60"></i>
-                <div class="mt-4">
-                    <h4 class="font-extrabold text-xs sm:text-base leading-tight">100% Organik</h4>
-                    <p class="text-[9px] sm:text-[11px] opacity-80">Bebas zat aditif</p>
+            <div class="bg-emerald-600 text-white p-6 rounded-3xl flex flex-col justify-between min-h-[140px] shadow-sm hover:scale-105 transition-transform duration-300">
+                <i class="fa-solid fa-leaf text-2xl opacity-60"></i>
+                <div>
+                    <h4 class="font-extrabold text-base leading-tight">100% Organik</h4>
+                    <p class="text-[11px] opacity-80">Bebas gula murni & zat aditif</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="catalogue" class="py-16 md:py-24 bg-slate-50 border-y border-slate-100 relative z-10">
-        <div class="max-w-6xl mx-auto px-4 md:px-6">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-center text-slate-900 mb-2 tracking-tight">
-                Katalog Formula Sehat
-            </h2>
-            <p class="text-center text-slate-500 text-[10px] md:text-xs font-semibold max-w-md mx-auto mb-10 md:mb-16 uppercase tracking-wider text-ecoGreen">
+    <section id="catalogue" class="py-24 bg-slate-50 border-y border-slate-100 relative z-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-extrabold text-center text-slate-900 mb-4 tracking-tight">Katalog Formula Sehat</h2>
+            <p class="text-center text-slate-500 text-xs font-semibold max-w-md mx-auto mb-16 uppercase tracking-wider text-ecoGreen">
                 Dimension 02: Analytical Usability Quality
             </p>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:grid-cols-3 md:gap-12 dynamic-cards-trigger">
-                
-                <div class="bg-white rounded-[25px] md:rounded-[35px] p-5 md:p-6 border border-slate-200/50 shadow-sm flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 product-card opacity-0">
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 dynamic-cards-trigger">
+                <div class="bg-white rounded-[35px] p-6 border border-slate-200/50 shadow-sm flex flex-col justify-between hover:shadow-xl hover:-translate-y-2 transition-all duration-300 product-card opacity-0">
                     <div class="flex flex-col items-center space-y-4">
-                        <div class="w-36 h-56 sm:w-40 sm:h-64 bg-gradient-to-b from-emerald-300 via-emerald-500 to-teal-600 rounded-[24px] sm:rounded-[30px] p-4 flex flex-col justify-between overflow-hidden text-white can-glow-green relative group">
+                        <div class="w-40 h-64 bg-gradient-to-b from-emerald-300 via-emerald-500 to-teal-600 rounded-[30px] p-4 flex flex-col justify-between overflow-hidden text-white can-glow-green relative group">
                             <div class="absolute inset-0 bg-white/10 skew-x-12 origin-top-left"></div>
-                            <div class="text-center font-bold text-[8px] sm:text-[9px] text-white/40 uppercase">Clean Diet</div>
+                            <div class="text-center font-bold text-[9px] text-white/40 uppercase">Clean Diet</div>
                             <div class="text-center">
-                                <img src="img/pir.png" alt="pir" class="w-10 h-10 sm:w-12 sm:h-12 mx-auto object-contain group-hover:rotate-6 transition-transform">
-                                <h3 class="font-black text-sm sm:text-base mt-1 sm:mt-2">Green Boost</h3>
+                                <img src="img/pir.png" alt="pir" class="w-12 h-12 mx-auto object-contain group-hover:rotate-6 transition-transform">
+                                <h3 class="font-black text-base mt-2">Green Boost</h3>
                             </div>
-                            <div class="w-full bg-white/20 backdrop-blur-sm rounded-xl py-1 text-[8px] sm:text-[9px] text-center font-bold">DETOX ACTIVE</div>
+                            <div class="w-full bg-white/20 backdrop-blur-sm rounded-xl py-1 text-[9px] text-center font-bold">DETOX ACTIVE</div>
                         </div>
-
-                        <div class="w-full space-y-2 pt-1">
-                            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-emerald-600 block"><i class="fa-solid fa-chart-bar"></i> Nilai Gizi / 250ml:</span>
-                            <div class="grid grid-cols-3 gap-1 text-center text-[9px] sm:text-[10px] font-bold">
+                        <div class="w-full space-y-2 pt-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-600 block"><i class="fa-solid fa-chart-bar"></i> Nilai Gizi / 250ml:</span>
+                            <div class="grid grid-cols-3 gap-1 text-center text-[10px] font-bold">
                                 <div class="bg-slate-100 p-1.5 rounded-lg text-slate-700">Kalori<br><span class="text-slate-900 font-extrabold">95 Kcal</span></div>
                                 <div class="bg-slate-100 p-1.5 rounded-lg text-slate-700">Serat<br><span class="text-slate-900 font-extrabold">4.2g</span></div>
                                 <div class="bg-slate-100 p-1.5 rounded-lg text-slate-700">Vit K<br><span class="text-slate-900 font-extrabold">90% DV</span></div>
                             </div>
                         </div>
-
-                        <div class="w-full bg-slate-50 rounded-xl p-3.5 cursor-pointer border border-transparent hover:bg-emerald-50/50 transition-all duration-300" onclick="toggleAccordionMenu(this)">
+                        <div class="w-full bg-slate-50 rounded-xl p-3 cursor-pointer border border-transparent hover:bg-emerald-50/50 transition-all duration-300 accordion-toggle">
                             <div class="flex justify-between items-center font-bold text-[11px] text-slate-600">
                                 <span><i class="fa-solid fa-blender text-emerald-500 mr-1"></i> Saran Mix Jus & Salad</span>
                                 <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300 arrow-icon"></i>
@@ -201,28 +198,26 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-[25px] md:rounded-[35px] p-5 md:p-6 border border-slate-200/50 shadow-sm flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 product-card opacity-0">
+                <div class="bg-white rounded-[35px] p-6 border border-slate-200/50 shadow-sm flex flex-col justify-between hover:shadow-xl hover:-translate-y-2 transition-all duration-300 product-card opacity-0">
                     <div class="flex flex-col items-center space-y-4">
-                        <div class="w-36 h-56 sm:w-40 sm:h-64 bg-gradient-to-b from-rose-300 via-ecoPink to-purple-500 rounded-[24px] sm:rounded-[30px] p-4 flex flex-col justify-between overflow-hidden text-white can-glow-pink relative group">
+                        <div class="w-40 h-64 bg-gradient-to-b from-rose-300 via-ecoPink to-purple-500 rounded-[30px] p-4 flex flex-col justify-between overflow-hidden text-white can-glow-pink relative group">
                             <div class="absolute inset-0 bg-white/10 skew-x-12 origin-top-left"></div>
-                            <div class="text-center font-bold text-[8px] sm:text-[9px] text-white/40 uppercase">Antioxidant</div>
+                            <div class="text-center font-bold text-[9px] text-white/40 uppercase">Antioxidant</div>
                             <div class="text-center">
-                                <img src="img/stroberi.png" alt="Stroberi" class="w-10 h-10 sm:w-12 sm:h-12 mx-auto object-contain group-hover:rotate-6 transition-transform">
-                                <h3 class="font-black text-sm sm:text-base mt-1 sm:mt-2">Berry Bliss</h3>
+                                <img src="img/stroberi.png" alt="Stroberi" class="w-12 h-12 mx-auto object-contain group-hover:rotate-6 transition-transform">
+                                <h3 class="font-black text-base mt-2">Berry Bliss</h3>
                             </div>
-                            <div class="w-full bg-white/20 backdrop-blur-sm rounded-xl py-1 text-[8px] sm:text-[9px] text-center font-bold">CELLULAR GLOW</div>
+                            <div class="w-full bg-white/20 backdrop-blur-sm rounded-xl py-1 text-[9px] text-center font-bold">CELLULAR GLOW</div>
                         </div>
-
-                        <div class="w-full space-y-2 pt-1">
-                            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-rose-500 block"><i class="fa-solid fa-chart-bar"></i> Nilai Gizi / 250ml:</span>
-                            <div class="grid grid-cols-3 gap-1 text-center text-[9px] sm:text-[10px] font-bold">
+                        <div class="w-full space-y-2 pt-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-rose-500 block"><i class="fa-solid fa-chart-bar"></i> Nilai Gizi / 250ml:</span>
+                            <div class="grid grid-cols-3 gap-1 text-center text-[10px] font-bold">
                                 <div class="bg-slate-100 p-1.5 rounded-lg text-slate-700">Kalori<br><span class="text-slate-900 font-extrabold">120 Kcal</span></div>
                                 <div class="bg-slate-100 p-1.5 rounded-lg text-slate-700">Vit C<br><span class="text-slate-900 font-extrabold">140% DV</span></div>
-                                <div class="bg-slate-100 p-1.5 rounded-lg text-slate-700">Polifnl<br><span class="text-slate-900 font-extrabold">350mg</span></div>
+                                <div class="bg-slate-100 p-1.5 rounded-lg text-slate-700">Polifenol<br><span class="text-slate-900 font-extrabold">350mg</span></div>
                             </div>
                         </div>
-
-                        <div class="w-full bg-slate-50 rounded-xl p-3.5 cursor-pointer border border-transparent hover:bg-rose-50/50 transition-all duration-300" onclick="toggleAccordionMenu(this)">
+                        <div class="w-full bg-slate-50 rounded-xl p-3 cursor-pointer border border-transparent hover:bg-rose-50/50 transition-all duration-300 accordion-toggle">
                             <div class="flex justify-between items-center font-bold text-[11px] text-slate-600">
                                 <span><i class="fa-solid fa-blender text-rose-400 mr-1"></i> Saran Mix Jus & Salad</span>
                                 <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300 arrow-icon"></i>
@@ -235,28 +230,26 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-[25px] md:rounded-[35px] p-5 md:p-6 border border-slate-200/50 shadow-sm flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 product-card opacity-0 sm:col-span-2 md:col-span-1">
-                    <div class="flex flex-col items-center space-y-4 max-w-sm sm:mx-auto md:w-full">
-                        <div class="w-36 h-56 sm:w-40 sm:h-64 bg-gradient-to-b from-amber-300 via-ecoOrange to-rose-400 rounded-[24px] sm:rounded-[30px] p-4 flex flex-col justify-between overflow-hidden text-white can-glow-orange relative group">
+                <div class="bg-white rounded-[35px] p-6 border border-slate-200/50 shadow-sm flex flex-col justify-between hover:shadow-xl hover:-translate-y-2 transition-all duration-300 product-card opacity-0">
+                    <div class="flex flex-col items-center space-y-4">
+                        <div class="w-40 h-64 bg-gradient-to-b from-amber-300 via-ecoOrange to-rose-400 rounded-[30px] p-4 flex flex-col justify-between overflow-hidden text-white can-glow-orange relative group">
                             <div class="absolute inset-0 bg-white/10 skew-x-12 origin-top-left"></div>
-                            <div class="text-center font-bold text-[8px] sm:text-[9px] text-white/40 uppercase">Immune Base</div>
+                            <div class="text-center font-bold text-[9px] text-white/40 uppercase">Immune Base</div>
                             <div class="text-center">
-                                <img src="img/jeyuk.png" alt="Jeruk" class="w-10 h-10 sm:w-12 sm:h-12 mx-auto object-contain filter drop-shadow-md">
-                                <h3 class="font-black text-sm sm:text-base mt-1 sm:mt-2">Zest Citrus</h3>
+                                <img src="img/jeyuk.png" alt="Jeruk" class="w-12 h-12 mx-auto object-contain filter drop-shadow-md">
+                                <h3 class="font-black text-base mt-2">Zest Citrus</h3>
                             </div>
-                            <div class="w-full bg-white/20 backdrop-blur-sm rounded-xl py-1 text-[8px] sm:text-[9px] text-center font-bold">VITAMIN C+ INFUSED</div>
+                            <div class="w-full bg-white/20 backdrop-blur-sm rounded-xl py-1 text-[9px] text-center font-bold">VITAMIN C+ INFUSED</div>
                         </div>
-
-                        <div class="w-full space-y-2 pt-1">
-                            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-amber-600 block"><i class="fa-solid fa-chart-bar"></i> Nilai Gizi / 250ml:</span>
-                            <div class="grid grid-cols-3 gap-1 text-center text-[9px] sm:text-[10px] font-bold">
+                        <div class="w-full space-y-2 pt-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-amber-600 block"><i class="fa-solid fa-chart-bar"></i> Nilai Gizi / 250ml:</span>
+                            <div class="grid grid-cols-3 gap-1 text-center text-[10px] font-bold">
                                 <div class="bg-slate-100 p-1.5 rounded-lg text-slate-700">Kalori<br><span class="text-slate-900 font-extrabold">110 Kcal</span></div>
                                 <div class="bg-slate-100 p-1.5 rounded-lg text-slate-700">Kalium<br><span class="text-slate-900 font-extrabold">320mg</span></div>
-                                <div class="bg-slate-100 p-1.5 rounded-lg text-slate-700">Flavnid<br><span class="text-slate-900 font-extrabold">180mg</span></div>
+                                <div class="bg-slate-100 p-1.5 rounded-lg text-slate-700">Flavonoid<br><span class="text-slate-900 font-extrabold">180mg</span></div>
                             </div>
                         </div>
-
-                        <div class="w-full bg-slate-50 rounded-xl p-3.5 cursor-pointer border border-transparent hover:bg-amber-50/50 transition-all duration-300" onclick="toggleAccordionMenu(this)">
+                        <div class="w-full bg-slate-50 rounded-xl p-3 cursor-pointer border border-transparent hover:bg-amber-50/50 transition-all duration-300 accordion-toggle">
                             <div class="flex justify-between items-center font-bold text-[11px] text-slate-600">
                                 <span><i class="fa-solid fa-blender text-ecoOrange mr-1"></i> Saran Mix Jus & Salad</span>
                                 <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300 arrow-icon"></i>
@@ -268,120 +261,146 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section id="hub-lokasi" class="py-16 md:py-24 bg-gradient-to-b from-slate-50 to-slate-100 border-t border-slate-200/40 relative z-10">
-        <div class="max-w-6xl mx-auto px-4 md:px-6 space-y-10 md:space-y-16">
+    <section id="quiz-section" class="py-24 px-4 md:px-6 max-w-4xl mx-auto relative z-10 quiz-container opacity-0">
+        <div class="w-full bg-[#1c3a27] text-white rounded-[45px] p-8 md:p-16 shadow-2xl relative overflow-hidden border border-emerald-800/30">
+            <div class="absolute -right-16 -bottom-16 text-[12rem] font-bold text-emerald-900/20 select-none pointer-events-none">🌿</div>
+            <div class="absolute top-8 right-12 w-24 h-24 rounded-full bg-white/5 blur-xl pointer-events-none"></div>
 
-            <div class="text-center max-w-xl mx-auto space-y-2">
-                <span class="text-ecoGreen font-bold uppercase text-[9px] md:text-[10px] tracking-widest block">
-                    Dimension 03: Service Interaction Quality
+            <div id="quiz-intro" class="space-y-6 max-w-xl mx-auto text-center relative z-10">
+                <span class="inline-block bg-white/10 backdrop-blur-md text-ecoGreen font-mono font-bold text-[10px] tracking-widest uppercase px-4 py-1.5 rounded-full border border-white/5">
+                    Asisten Gizi Personal
                 </span>
-                <h2 class="text-2xl md:text-4xl font-extrabold tracking-tight text-slate-900">
-                    Laboratorium Fisik & Pusat Distribusi
-                </h2>
-                <p class="text-slate-500 text-xs font-medium">
-                    Akses lokasi laboratorium riset nutrisi dan titik pengambilan produk cold-chain asli terdekat di kota Anda.
+                <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight">Bingung varian mana yang cocok untuk tubuhmu?</h2>
+                <p class="text-emerald-100/70 text-sm font-medium leading-relaxed">
+                    Sistem rekomendasi kami akan menganalisis kebutuhan energi dan target metabolisme harianmu lewat dua pertanyaan praktis.
                 </p>
+                <div class="pt-4">
+                    <button id="btn-start-quiz" class="bg-ecoGreen hover:bg-emerald-400 text-[#1c3a27] font-extrabold text-xs tracking-wider uppercase px-8 py-4 rounded-full transition-all duration-300 shadow-lg shadow-ecoGreen/20 hover:-translate-y-0.5 active:translate-y-0">
+                        Mulai Analisis <i class="fa-solid fa-arrow-right-long ml-2"></i>
+                    </button>
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 location-trigger-grid">
+            <div id="quiz-body" class="hidden space-y-8 relative z-10">
+                <div class="flex justify-between items-center border-b border-emerald-800/60 pb-4">
+                    <span id="quiz-progress" class="text-emerald-300/80 font-mono font-bold text-[11px] tracking-widest uppercase">Pertanyaan 1 dari 2</span>
+                    <div class="flex gap-1.5">
+                        <div id="dot-step-1" class="w-2 h-2 rounded-full bg-ecoGreen transition-all duration-300"></div>
+                        <div id="dot-step-2" class="w-2 h-2 rounded-full bg-emerald-800 transition-all duration-300"></div>
+                    </div>
+                </div>
+                
+                <div id="quiz-anim-box" class="space-y-6">
+                    <h3 id="quiz-question" class="text-xl md:text-3xl font-bold text-white tracking-tight leading-snug">Apa target kesehatan fisik utama yang ingin kamu capai saat ini?</h3>
+                    <div id="quiz-options" class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                        </div>
+                </div>
+            </div>
 
-                <div class="bg-white rounded-[25px] md:rounded-[35px] p-6 md:p-8 border border-slate-200/60 shadow-sm flex flex-col justify-between hover:shadow-xl transition-all duration-300 group location-card opacity-0">
-                    <div class="space-y-4">
-                        <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-base md:text-lg font-bold group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+            <div id="quiz-result" class="hidden space-y-8 text-center max-w-xl mx-auto relative z-10">
+                <div class="space-y-2">
+                    <span class="text-amber-400 font-bold text-xs tracking-widest uppercase flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-sparkles"></i> Rekomendasi Formula Selesai <i class="fa-solid fa-sparkles"></i>
+                    </span>
+                    <h3 id="result-title" class="text-4xl md:text-5xl font-black text-white tracking-tight">Green Boost</h3>
+                </div>
+                
+                <div class="bg-emerald-950/40 border border-emerald-800/40 rounded-3xl p-6 md:p-8 text-left relative overflow-hidden backdrop-blur-sm">
+                    <p id="result-desc" class="text-emerald-100/80 text-xs md:text-sm font-medium leading-relaxed"></p>
+                </div>
+                
+                <div class="flex justify-center items-center gap-4 pt-2">
+                    <button id="btn-reset-quiz" class="text-emerald-300 hover:text-white font-bold text-xs px-6 py-3 transition-colors">
+                        <i class="fa-solid fa-rotate-left mr-1.5"></i>Ulangi Kuis
+                    </button>
+                    <a id="result-link" href="#catalogue" class="bg-white hover:bg-emerald-50 text-[#1c3a27] font-bold text-xs px-8 py-3.5 rounded-full transition-all duration-300 shadow-md">
+                        Lihat Detail Formula
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hub-lokasi" class="py-24 bg-gradient-to-b from-slate-50 to-slate-100 border-t border-slate-200/40 relative z-10">
+        <div class="max-w-6xl mx-auto px-6 space-y-16">
+            <div class="text-center max-w-xl mx-auto space-y-2">
+                <span class="text-ecoGreen font-bold uppercase text-[10px] tracking-widest block">Dimension 03: Service Interaction Quality</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900">Laboratorium Fisik & Pusat Distribusi</h2>
+                <p class="text-slate-500 text-xs font-medium">Akses lokasi laboratorium riset nutrisi dan titik pengambilan produk cold-chain asli terdekat di kota Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 location-trigger-grid">
+                <div class="bg-white rounded-[35px] p-8 border border-slate-200/60 shadow-sm flex flex-col justify-between hover:shadow-xl transition-all duration-300 group location-card opacity-0">
+                    <div class="space-y-5">
+                        <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg font-bold group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
                             <i class="fa-solid fa-building-shield"></i>
                         </div>
-                        <div class="space-y-1.5">
-                            <span class="text-[8px] md:text-[9px] font-black uppercase tracking-wider text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md">Pusat Utama (HQ)</span>
-                            <h4 class="text-sm md:text-base font-bold text-slate-900">REJUVE Gandaria City</h4>
-                            <p class="text-slate-500 text-[11px] leading-relaxed">
-                                Gandaria City, Jl. Sultan Iskandar Muda No.10 Lantai 2, RT.5/RW.4, Kebayoran Lama, Kota Jakarta Selatan.
-                            </p>
+                        <div class="space-y-2">
+                            <span class="text-[9px] font-black uppercase tracking-wider text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md">Pusat Utama (HQ)</span>
+                            <h4 class="text-base font-bold text-slate-900">REJUVE Gandaria City</h4>
+                            <p class="text-slate-500 text-[11px] leading-relaxed">Gandaria City, Jl. Sultan Iskandar Muda No.10 Lantai 2, RT.5/RW.4, Kebayoran Lama, Kota Jakarta Selatan.</p>
                         </div>
-                        <div class="pt-3 border-t border-slate-100 space-y-1.5 text-[11px] text-slate-600 font-medium">
-                            <div class="flex items-center gap-2">
-                                <i class="fa-regular fa-clock text-emerald-500 w-4"></i>
-                                <span>06.00 – 22.00 WIB</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <i class="fa-solid fa-phone text-emerald-500 w-4"></i>
-                                <span>+62 877-7501-8199</span>
-                            </div>
+                        <div class="pt-4 border-t border-slate-100 space-y-2 text-[11px] text-slate-600 font-medium">
+                            <div class="flex items-center gap-2"><i class="fa-regular fa-clock text-emerald-500 w-4"></i><span>Setiap Hari: 06.00 – 22.00 WIB</span></div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-phone text-emerald-500 w-4"></i><span>+62 877-7501-8199</span></div>
                         </div>
                     </div>
-                    <a href="https://maps.google.com" target="_blank" class="w-full bg-slate-950 hover:bg-emerald-600 text-white font-bold text-center text-xs py-3 rounded-xl shadow-sm transition-all mt-5 block tracking-wide">
-                        Buka Google Maps <i class="fa-solid fa-location-arrow text-[9px] ml-1"></i>
+                    <a href="https://maps.google.com" target="_blank" class="w-full bg-slate-950 hover:bg-emerald-600 text-white font-bold text-center text-xs py-3.5 rounded-xl shadow-sm transition-all mt-6 block tracking-wide">
+                        Buka Google Maps <i class="fa-solid fa-location-arrow text-[10px] ml-1"></i>
                     </a>
                 </div>
 
-                <div class="bg-white rounded-[25px] md:rounded-[35px] p-6 md:p-8 border border-slate-200/60 shadow-sm flex flex-col justify-between hover:shadow-xl transition-all duration-300 group location-card opacity-0">
-                    <div class="space-y-4">
-                        <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-base md:text-lg font-bold group-hover:bg-amber-500 group-hover:text-white transition-all duration-300">
+                <div class="bg-white rounded-[35px] p-8 border border-slate-200/60 shadow-sm flex flex-col justify-between hover:shadow-xl transition-all duration-300 group location-card opacity-0">
+                    <div class="space-y-5">
+                        <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-lg font-bold group-hover:bg-amber-500 group-hover:text-white transition-all duration-300">
                             <i class="fa-solid fa-store"></i>
                         </div>
-                        <div class="space-y-1.5">
-                            <span class="text-[8px] md:text-[9px] font-black uppercase tracking-wider text-amber-600 bg-amber-50 px-2 py-0.5 rounded-md">Jawa Barat Cluster</span>
-                            <h4 class="text-sm md:text-base font-bold text-slate-900">Re.juve - Trans Studio Mall</h4>
-                            <p class="text-slate-500 text-[11px] leading-relaxed">
-                                Trans Studio Mall, Lantai Ground, Jl. Gatot Subroto, Maleer, Kec. Batununggal, Kota Bandung.
-                            </p>
+                        <div class="space-y-2">
+                            <span class="text-[9px] font-black uppercase tracking-wider text-amber-600 bg-amber-50 px-2 py-0.5 rounded-md">Jawa Barat Cluster</span>
+                            <h4 class="text-base font-bold text-slate-900">Re.juve - Trans Studio Mall</h4>
+                            <p class="text-slate-500 text-[11px] leading-relaxed">Trans Studio Mall, Lantai Ground, Jl. Gatot Subroto, Maleer, Kec. Batununggal, Kota Bandung.</p>
                         </div>
-                        <div class="pt-3 border-t border-slate-100 space-y-1.5 text-[11px] text-slate-600 font-medium">
-                            <div class="flex items-center gap-2">
-                                <i class="fa-regular fa-clock text-amber-500 w-4"></i>
-                                <span>10.00 – 22.00 WIB</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <i class="fa-solid fa-phone text-amber-500 w-4"></i>
-                                <span>+62 817-0115-007</span>
-                            </div>
+                        <div class="pt-4 border-t border-slate-100 space-y-2 text-[11px] text-slate-600 font-medium">
+                            <div class="flex items-center gap-2"><i class="fa-regular fa-clock text-amber-500 w-4"></i><span>Setiap Hari: 10.00 – 22.00 WIB</span></div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-phone text-amber-500 w-4"></i><span>+62 817-0115-007</span></div>
                         </div>
                     </div>
-                    <a href="https://maps.google.com" target="_blank" class="w-full bg-slate-950 hover:bg-amber-500 text-white font-bold text-center text-xs py-3 rounded-xl shadow-sm transition-all mt-5 block tracking-wide">
-                        Buka Google Maps <i class="fa-solid fa-location-arrow text-[9px] ml-1"></i>
+                    <a href="https://maps.google.com" target="_blank" class="w-full bg-slate-950 hover:bg-amber-500 text-white font-bold text-center text-xs py-3.5 rounded-xl shadow-sm transition-all mt-6 block tracking-wide">
+                        Buka Google Maps <i class="fa-solid fa-location-arrow text-[10px] ml-1"></i>
                     </a>
                 </div>
 
-                <div class="bg-white rounded-[25px] md:rounded-[35px] p-6 md:p-8 border border-slate-200/60 shadow-sm flex flex-col justify-between hover:shadow-xl transition-all duration-300 group location-card opacity-0 sm:col-span-2 md:col-span-1">
-                    <div class="space-y-4 sm:max-w-md sm:mx-auto md:w-full">
-                        <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center text-base md:text-lg font-bold group-hover:bg-rose-500 group-hover:text-white transition-all duration-300">
+                <div class="bg-white rounded-[35px] p-8 border border-slate-200/60 shadow-sm flex flex-col justify-between hover:shadow-xl transition-all duration-300 group location-card opacity-0">
+                    <div class="space-y-5">
+                        <div class="w-12 h-12 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center text-lg font-bold group-hover:bg-rose-500 group-hover:text-white transition-all duration-300">
                             <i class="fa-solid fa-flask-vial"></i>
                         </div>
-                        <div class="space-y-1.5">
-                            <span class="text-[8px] md:text-[9px] font-black uppercase tracking-wider text-rose-500 bg-rose-50 px-2 py-0.5 rounded-md">Partner Kiosk</span>
-                            <h4 class="text-sm md:text-base font-bold text-slate-900">LOS tropis Gempol</h4>
-                            <p class="text-slate-500 text-[11px] leading-relaxed">
-                                Jl. Gempol Kulon No.20, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat.
-                            </p>
+                        <div class="space-y-2">
+                            <span class="text-[9px] font-black uppercase tracking-wider text-rose-500 bg-rose-50 px-2 py-0.5 rounded-md">Partner Kiosk</span>
+                            <h4 class="text-base font-bold text-slate-900">LOS tropis Gempol</h4>
+                            <p class="text-slate-500 text-[11px] leading-relaxed">Jl. Gempol Kulon No.20, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat.</p>
                         </div>
-                        <div class="pt-3 border-t border-slate-100 space-y-1.5 text-[11px] text-slate-600 font-medium">
-                            <div class="flex items-center gap-2">
-                                <i class="fa-regular fa-clock text-rose-500 w-4"></i>
-                                <span>07.00 – 20.00 WIB</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <i class="fa-solid fa-circle-info text-rose-500 w-4"></i>
-                                <span>Mitra Distribusi Buah Segar</span>
-                            </div>
+                        <div class="pt-4 border-t border-slate-100 space-y-2 text-[11px] text-slate-600 font-medium">
+                            <div class="flex items-center gap-2"><i class="fa-regular fa-clock text-rose-500 w-4"></i><span>Setiap Hari: 07.00 – 20.00 WIB</span></div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-info text-rose-500 w-4"></i><span>Mitra Distribusi Buah Segar</span></div>
                         </div>
                     </div>
-                    <a href="https://maps.google.com" target="_blank" class="w-full bg-slate-950 hover:bg-rose-500 text-white font-bold text-center text-xs py-3 rounded-xl shadow-sm transition-all mt-5 block tracking-wide sm:max-w-md sm:mx-auto md:w-full">
-                        Buka Google Maps <i class="fa-solid fa-location-arrow text-[9px] ml-1"></i>
+                    <a href="https://maps.google.com" target="_blank" class="w-full bg-slate-950 hover:bg-rose-500 text-white font-bold text-center text-xs py-3.5 rounded-xl shadow-sm transition-all mt-6 block tracking-wide">
+                        Buka Google Maps <i class="fa-solid fa-location-arrow text-[10px] ml-1"></i>
                     </a>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <footer class="w-full py-6 md:py-8 border-t border-slate-100 bg-white relative z-10">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-6 gap-3 text-[11px] md:text-xs font-medium text-slate-400 text-center">
+    <footer class="w-full py-8 border-t border-slate-100 bg-white relative z-10">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-6 gap-4 text-xs font-medium text-slate-400">
             <div>© 2026 Eco Fruits - Sakhra Yusriza Mawla</div>
-            <div class="flex gap-5 text-lg text-slate-400">
+            <div class="flex gap-4 text-lg text-slate-400">
                 <i class="fa-brands fa-whatsapp hover:text-ecoDarkGreen cursor-pointer"></i>
                 <i class="fa-brands fa-instagram hover:text-ecoDarkGreen cursor-pointer"></i>
             </div>
@@ -391,76 +410,216 @@
     <script>
         gsap.registerPlugin(ScrollTrigger);
 
-        window.addEventListener('DOMContentLoaded', () => {
-            gsap.to("#heroText", { opacity: 1, x: 0, duration: 1, ease: "power4.out" });
-            gsap.to("#heroVisual", { opacity: 1, scale: 1, duration: 1.2, delay: 0.2, ease: "back.out(1.4)" });
-
-            gsap.to("#mainCan", {
-                y: -10,
-                rotation: 4,
-                duration: 3,
-                repeat: -1,
-                yoyo: true,
-                ease: "sine.inOut"
-            });
-
-            gsap.to(".floating-fruit", {
-                y: "random(-20, 20)",
-                x: "random(-12, 12)",
-                rotation: "random(-15, 15)",
-                duration: "random(4, 6)",
-                repeat: -1,
-                yoyo: true,
-                ease: "sine.inOut"
-            });
-        });
-
-        gsap.to(".about-text", {
-            scrollTrigger: { trigger: "#about", start: "top 80%" },
-            opacity: 1, duration: 0.8, ease: "power2.out"
-        });
-        gsap.to(".about-grid", {
-            scrollTrigger: { trigger: "#about", start: "top 80%" },
-            opacity: 1, delay: 0.1, duration: 0.8, ease: "power2.out"
-        });
-
-        gsap.to(".product-card", {
-            scrollTrigger: { trigger: ".dynamic-cards-trigger", start: "top 80%" },
-            opacity: 1,
-            y: 0,
-            stagger: 0.1,
-            duration: 0.7,
-            ease: "power3.out"
-        });
-
-        gsap.to(".location-card", {
-            scrollTrigger: { trigger: ".location-trigger-grid", start: "top 80%" },
-            opacity: 1,
-            y: 0,
-            stagger: 0.1,
-            duration: 0.7,
-            ease: "power3.out"
-        });
-
-        function toggleAccordionMenu(element) {
-            const content = element.querySelector('.accordion-content');
-            const arrow = element.querySelector('.arrow-icon');
-
-            document.querySelectorAll('.accordion-content').forEach(item => {
-                if (item !== content) {
-                    item.style.maxHeight = null;
-                    item.parentElement.querySelector('.arrow-icon').classList.remove('rotate-180');
+        // ========================================================
+        // GLOBAL APP CONTROLLER (ANTI-AI PROFESSIONAL ARCHITECTURE)
+        // ========================================================
+        const AppCore = {
+            variantsData: {
+                orange: {
+                    number: "05", bg: "from-ecoOrange to-orange-700", title: "Zest. Citrus",
+                    desc: "Jus organik murni kualitas premium untuk menghidrasi seluler dan mengembalikan stamina aktif harian Anda tanpa bahan pengawet.",
+                    canBg: "from-amber-300 via-ecoOrange to-rose-400", canTitle: "Zest Citrus",
+                    canTagTop: "Premium Core", canTagBottom: "100% ORGANIK", glow: "can-glow-orange", img: "img/jeyuk.png"
+                },
+                green: {
+                    number: "01", bg: "from-emerald-500 to-teal-700", title: "Green. Boost",
+                    desc: "Formula cold-pressed apel hijau, seledri hidroponik, dan mentimun murni untuk memperlancar detoksifikasi sistem pencernaan aktif harian.",
+                    canBg: "from-emerald-300 via-emerald-500 to-teal-600", canTitle: "Green Boost",
+                    canTagTop: "Clean Diet", canTagBottom: "DETOX ACTIVE", glow: "can-glow-green", img: "img/pir.png"
+                },
+                pink: {
+                    number: "03", bg: "from-rose-500 to-purple-700", title: "Berry. Bliss",
+                    desc: "Perpaduan antioksidan alami dari stroberi liar, pisang ambon, chia seed, dan kelembutan susu oat premium penangkal radikal bebas.",
+                    canBg: "from-rose-300 via-ecoPink to-purple-500", canTitle: "Berry Bliss",
+                    canTagTop: "Antioxidant", canTagBottom: "CELLULAR GLOW", glow: "can-glow-pink", img: "img/stroberi.png"
                 }
-            });
+            },
 
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-                arrow.classList.remove('rotate-180');
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-                arrow.classList.add('rotate-180');
+            quizData: {
+                currentStep: 1,
+                answers: { step1: '', step2: '' },
+                structure: {
+                    1: {
+                        q: "Apa target utama kesehatan fisik yang ingin kamu capai saat ini?",
+                        options: [
+                            { text: "Pembersihan Racun Tubuh (Detox Sistem)", val: "detox" },
+                            { text: "Meningkatkan Sistem Proteksi & Imun", val: "imun" }
+                        ]
+                    },
+                    2: {
+                        q: "Bagaimana kondisi aktivitas harian kamu akhir-akhir ini?",
+                        options: [
+                            { text: "Banyak Duduk & Produktivitas Ringan", val: "ringan" },
+                            { text: "Sangat Padat Bergerak & Rawan Lelah", val: "berat" }
+                        ]
+                    }
+                }
+            },
+
+            init() {
+                this.setupHeroVariantListeners();
+                this.setupQuizListeners();
+                this.setupAccordionListeners();
+                this.runGlobalAnimations();
+            },
+
+            setupHeroVariantListeners() {
+                const buttons = document.querySelectorAll('#variant-selector-group button');
+                buttons.forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const variantKey = e.target.getAttribute('data-variant');
+                        const data = this.variantsData[variantKey];
+
+                        buttons.forEach(b => b.classList.replace('border-white', 'border-transparent'));
+                        e.target.classList.replace('border-transparent', 'border-white');
+
+                        gsap.to(["#heroNumber", "#heroTitle", "#heroDesc", "#mainCan"], {
+                            opacity: 0, y: 15, duration: 0.3, onComplete: () => {
+                                document.getElementById('heroBg').className = `w-full bg-gradient-to-br ${data.bg} rounded-[40px] px-8 md:px-20 py-16 md:py-24 relative overflow-hidden text-white min-h-[550px] flex items-center transition-all duration-700`;
+                                document.getElementById('heroNumber').innerText = data.number;
+                                document.getElementById('heroTitle').innerText = data.title;
+                                document.getElementById('heroDesc').innerText = data.desc;
+                                
+                                const can = document.getElementById('mainCan');
+                                can.className = `w-44 h-80 bg-gradient-to-b ${data.canBg} rounded-[35px] border-4 border-white/20 shadow-2xl relative p-4 flex flex-col justify-between overflow-hidden ${data.glow} transform rotate-6 transition-all duration-500`;
+                                document.getElementById('canTagTop').innerText = data.canTagTop;
+                                document.getElementById('canTitle').innerText = data.canTitle;
+                                document.getElementById('canTagBottom').innerText = data.canTagBottom;
+                                document.getElementById('canImg').src = data.img;
+
+                                gsap.to(["#heroNumber", "#heroTitle", "#heroDesc", "#mainCan"], { opacity: 1, y: 0, duration: 0.5, stagger: 0.04, ease: "power2.out" });
+                            }
+                        });
+                    });
+                });
+            },
+
+            setupQuizListeners() {
+                document.getElementById('btn-start-quiz').addEventListener('click', () => {
+                    gsap.to('#quiz-intro', { opacity: 0, y: -10, duration: 0.3, onComplete: () => {
+                        document.getElementById('quiz-intro').classList.add('hidden');
+                        document.getElementById('quiz-body').classList.remove('hidden');
+                        gsap.fromTo('#quiz-body', { opacity: 0, y: 15 }, { opacity: 1, y: 0, duration: 0.4 });
+                        this.renderQuizQuestion();
+                    }});
+                });
+
+                document.getElementById('btn-reset-quiz').addEventListener('click', () => {
+                    this.quizData.currentStep = 1;
+                    this.quizData.answers = { step1: '', step2: '' };
+                    document.getElementById('dot-step-2').classList.replace('bg-ecoGreen', 'bg-emerald-800');
+                    
+                    gsap.to('#quiz-result', { opacity: 0, duration: 0.3, onComplete: () => {
+                        document.getElementById('quiz-result').classList.add('hidden');
+                        document.getElementById('quiz-intro').classList.remove('hidden');
+                        gsap.fromTo('#quiz-intro', { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.4 });
+                    }});
+                });
+            },
+
+            renderQuizQuestion() {
+                const data = this.quizData.structure[this.quizData.currentStep];
+                document.getElementById('quiz-progress').innerText = `Pertanyaan ${this.quizData.currentStep} dari 2`;
+                document.getElementById('quiz-question').innerText = data.q;
+                
+                const container = document.getElementById('quiz-options');
+                container.innerHTML = '';
+                
+                data.options.forEach(opt => {
+                    const card = document.createElement('button');
+                    card.className = "group bg-emerald-950/40 hover:bg-white text-left p-5 rounded-2xl border border-emerald-800/50 hover:border-white transition-all duration-300 flex justify-between items-center w-full shadow-sm active:scale-[0.99]";
+                    card.innerHTML = `
+                        <span class="text-sm font-semibold text-emerald-100 group-hover:text-[#1c3a27] transition-colors">${opt.text}</span>
+                        <div class="w-7 h-7 rounded-full bg-emerald-900/30 group-hover:bg-ecoGreen flex items-center justify-center text-ecoGreen group-hover:text-[#1c3a27] transition-all text-xs">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    `;
+                    card.addEventListener('click', () => this.handleQuizSelection(opt.val));
+                    container.appendChild(card);
+                });
+            },
+
+            handleQuizSelection(value) {
+                gsap.to('#quiz-anim-box', { opacity: 0, x: -10, duration: 0.25, onComplete: () => {
+                    if (this.quizData.currentStep === 1) {
+                        this.quizData.answers.step1 = value;
+                        this.quizData.currentStep = 2;
+                        document.getElementById('dot-step-2').classList.replace('bg-emerald-800', 'bg-ecoGreen');
+                        this.renderQuizQuestion();
+                        gsap.fromTo('#quiz-anim-box', { opacity: 0, x: 10 }, { opacity: 1, x: 0, duration: 0.3 });
+                    } else {
+                        this.quizData.answers.step2 = value;
+                        this.evalQuizResult();
+                    }
+                }});
+            },
+
+            evalQuizResult() {
+                document.getElementById('quiz-body').classList.add('hidden');
+                document.getElementById('quiz-result').classList.remove('hidden');
+                gsap.fromTo('#quiz-result', { opacity: 0, y: 15 }, { opacity: 1, y: 0, duration: 0.4 });
+
+                let product = "", desc = "";
+                const answers = this.quizData.answers;
+
+                if (answers.step1 === "detox" && answers.step2 === "ringan") {
+                    product = "Green Boost";
+                    desc = "Sangat pas untuk Anda. Aktivitas harian yang dominan pasif rentan memicu penumpukan sisa metabolisme makanan. Serat pekat murni sebesar 4.2g serta asupan Vitamin K melimpah dari kombinasi apel hijau dan seledri siap merevitalisasi kinerja sistem pencernaan secara maksimal.";
+                } else if (answers.step1 === "detox" && answers.step2 === "berat") {
+                    product = "Berry Bliss";
+                    desc = "Tubuh aktif Anda membutuhkan percepatan pemulihan sel akibat paparan kelelahan fisik. Formulasi antioksidan makro 350mg polifenol serta asupan esensial Vitamin C murni dari klaster stroberi liar berpadu chia seed ini siap mengembalikan energi organ tubuh Anda.";
+                } else {
+                    product = "Zest Citrus";
+                    desc = "Ini adalah formula perisai perlindungan mutlak bagi Anda. Ekstrak konsentrat jeruk segar yang diperkaya elemen jahe emprit organik serta madu asli hutan tropis bekerja sinergis memperkuat barikade imun harian Anda dari kelelahan.";
+                }
+
+                document.getElementById('result-title').innerText = product;
+                document.getElementById('result-desc').innerText = desc;
+            },
+
+            setupAccordionListeners() {
+                document.querySelectorAll('.accordion-toggle').forEach(element => {
+                    element.addEventListener('click', function() {
+                        const content = this.querySelector('.accordion-content');
+                        const arrow = this.querySelector('.arrow-icon');
+
+                        document.querySelectorAll('.accordion-content').forEach(item => {
+                            if (item !== content) {
+                                item.style.maxHeight = null;
+                                item.parentElement.querySelector('.arrow-icon').classList.remove('rotate-180');
+                            }
+                        });
+
+                        if (content.style.maxHeight) {
+                            content.style.maxHeight = null;
+                            arrow.classList.remove('rotate-180');
+                        } else {
+                            content.style.maxHeight = content.scrollHeight + "px";
+                            arrow.classList.add('rotate-180');
+                        }
+                    });
+                });
+            },
+
+            runGlobalAnimations() {
+                window.addEventListener('DOMContentLoaded', () => {
+                    gsap.to("#heroText", { opacity: 1, x: 0, duration: 1, ease: "power4.out" });
+                    gsap.to("#heroVisual", { opacity: 1, scale: 1, duration: 1.2, delay: 0.2, ease: "back.out(1.4)" });
+                    
+                    gsap.to("#mainCan", { y: -12, rotation: 4, duration: 3, repeat: -1, yoyo: true, ease: "sine.inOut" });
+                    gsap.to(".floating-fruit", { y: "random(-25, 25)", x: "random(-15, 15)", rotation: "random(-20, 20)", duration: "random(4, 7)", repeat: -1, yoyo: true, ease: "sine.inOut" });
+                });
+
+                gsap.to(".about-text", { scrollTrigger: { trigger: "#about", start: "top 75%" }, opacity: 1, duration: 0.8, ease: "power2.out" });
+                gsap.to(".about-grid", { scrollTrigger: { trigger: "#about", start: "top 75%" }, opacity: 1, delay: 0.2, duration: 0.8, ease: "power2.out" });
+                gsap.to(".product-card", { scrollTrigger: { trigger: ".dynamic-cards-trigger", start: "top 75%" }, opacity: 1, y: 0, stagger: 0.15, duration: 0.8, ease: "power3.out" });
+                gsap.to(".quiz-container", { scrollTrigger: { trigger: "#quiz-section", start: "top 75%" }, opacity: 1, duration: 1, ease: "power2.out" });
+                gsap.to(".location-card", { scrollTrigger: { trigger: ".location-trigger-grid", start: "top 75%" }, opacity: 1, y: 0, stagger: 0.15, duration: 0.8, ease: "power3.out" });
             }
-        }
+        };
+
+        // Initialize Core Engine
+        AppCore.init();
     </script>
 </body>
 </html>
